@@ -13,7 +13,7 @@ logo.alt = 'PvZ GW2 Logo'
 logo.className = 'logo'
 
 const title = document.createElement('strong')
-title.textContent = 'PvZ GW2'
+title.textContent = 'The Almanac'
 
 navLeft.appendChild(logo)
 navLeft.appendChild(title)

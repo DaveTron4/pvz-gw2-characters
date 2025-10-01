@@ -86,9 +86,9 @@
 
 
 
-/* ==============Plant Page============== */
-/* Main plant card */
-.plant-info {
+/* ==============Character Page============== */
+/* Main Character card */
+.character-info {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
@@ -97,30 +97,47 @@
     box-shadow: var(--shadow-3);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 1.5rem;
 }
 
-/* Plant image */
-.image-container img#img {
+/* Character image */
+.image-container {
     max-width: 100%;
     border-radius: 12px;
     object-fit: contain;
+    align-self: center;
 }
 
 /* Centered text */
-.plant-details {
-    text-align: center;
+.character-details {
+    text-align: left;
 }
 
-/* Container for variant cards */
 .variant-container {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    padding: 1rem 0;
-    width: 100%;
-    scroll-behavior: smooth;
+  margin-top: 20px;
+}
+
+.variants-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.character-card img {
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.character-card p {
+  font-size: x-large;
 }
 
 /* Hide default scrollbar for Webkit */
@@ -132,41 +149,8 @@
     border-radius: 4px;
 }
 
-/* Variant cards using Pico CSS 'card' class */
-.variant-container .card {
-    min-width: 150px;
-    max-width: 150px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--surface-2);
-    border-radius: 10px;
-    box-shadow: var(--shadow-2);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
 
-/* Variant card image */
-.variant-container .card img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
 
-/* Variant card name */
-.variant-container .card h4 {
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-/* Hover effect for Pico feel */
-.variant-container .card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-3);
-}
 
 
 /* ==============404 Page============== */
